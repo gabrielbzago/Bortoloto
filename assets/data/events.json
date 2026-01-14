@@ -1,0 +1,23 @@
+[
+  {
+    "titulo": "Treino Aberto – Iniciantes",
+    "data": "2026-01-18",
+    "local": "Campo do clube",
+    "modalidade": "Recurvo / Barebow",
+    "status": "Inscrições abertas"
+  },
+  {
+    "titulo": "Clínica de Técnica – Intermediário",
+    "data": "2026-02-08",
+    "local": "Campo do clube",
+    "modalidade": "Recurvo / Composto",
+    "status": "Vagas limitadas"
+  },
+  {
+    "titulo": "Prova Interna – Ranking",
+    "data": "2026-03-01",
+    "local": "Campo do clube",
+    "modalidade": "Indoor/Outdoor",
+    "status": "Em breve"
+  }
+]
