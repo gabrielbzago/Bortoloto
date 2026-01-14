@@ -212,3 +212,50 @@ h1{ margin: 12px 0 10px; font-size: clamp(2.0rem, 3.2vw, 3.0rem); letter-spacing
   background: #00c853;
   box-shadow: 0 0 6px rgba(0, 200, 83, 0.8);
 }
+
+/* HERO GRID – equilíbrio entre logo e texto */
+.hero-grid{
+  grid-template-columns: 0.9fr 1.6fr;
+  align-items: center;
+}
+
+/* Card do logo mais discreto */
+.logo-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+/* Enquadramento do logo */
+.logo-wrap{
+  width: 100%;
+  max-width: 260px;   /* CONTROLE DO TAMANHO */
+  margin: 0 auto;
+}
+
+.logo-wrap img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+/* Mobile: texto primeiro, logo abaixo */
+@media (max-width: 900px){
+  .hero-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .logo-card{
+    order: 2;
+  }
+
+  .card.pad{
+    order: 1;
+  }
+
+  .logo-wrap{
+    max-width: 200px;
+  }
+}
