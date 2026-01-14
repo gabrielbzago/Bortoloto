@@ -259,3 +259,35 @@ h1{ margin: 12px 0 10px; font-size: clamp(2.0rem, 3.2vw, 3.0rem); letter-spacing
     max-width: 200px;
   }
 }
+
+/* HERO — Mobile first polish */
+@media (max-width: 900px){
+  .hero { padding-top: 18px; padding-bottom: 18px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 14px; }
+
+  /* Texto mais “respirado” */
+  .card.pad { padding: 18px; }
+  .card.pad h1 { font-size: 34px; line-height: 1.08; }
+  .lead { font-size: 15.5px; line-height: 1.6; }
+
+  /* Logo menor e sem roubar espaço */
+  .logo-card { padding: 16px; }
+  .logo-wrap { max-width: 220px; }
+
+  /* Botões em coluna (melhor toque) */
+  .hero-cta { display: grid; gap: 10px; }
+  .hero-cta .btn { width: 100%; justify-content: center; }
+
+  /* “Treinos • Clínicas • Provas” quebrar linha com elegância */
+  .hero-cta .meta { margin-top: 2px; flex-wrap: wrap; row-gap: 6px; }
+
+  /* Pills não apertarem */
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pill { white-space: normal; }
+}
+
+/* Extra para telas bem pequenas */
+@media (max-width: 420px){
+  .card.pad h1 { font-size: 30px; }
+  .logo-wrap { max-width: 200px; }
+}
