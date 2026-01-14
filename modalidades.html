@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B102C" />
+  <title>Modalidades • BORTOLOTO</title>
+  <meta name="description" content="Modalidades atendidas pelo clube e descrição de cada uma." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="BORTOLOTO - Página inicial">
+      <div class="brand-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M6 18l6-12 6 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 18h8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="brand-title">
+        <strong>BORTOLOTO</strong>
+        <span>Clube de Formação e Alto Rendimento Esportivo</span>
+      </div>
+    </a>
+
+    <button class="btn small mobile-toggle" data-mobile-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+
+    <nav id="menu" class="menu" data-menu aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+<a href="materiais.html">Materiais</a>
+<a href="fotos.html">Fotos</a>
+<a href="provas.html">Provas</a>
+<a href="modalidades.html">Modalidades</a>
+<a href="eventos.html">Eventos</a>
+<a href="aulas.html">Aulas</a>
+      <a href="inscricoes.html">Inscrições</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn primary" href="inscricoes.html">Inscrever-se</a>
+    </div>
+  </div>
+</header>
+<main>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Modalidades</h2>
+        <p>Visão geral das modalidades atendidas, com indicação de objetivo e público.</p>
+      </div>
+      <a class="btn" href="materiais.html">Ver materiais</a>
+    </div>
+
+    <div class="grid-3">
+      <div class="tile">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21l18-18" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M7 17l-4 4" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Recurvo Olímpico</h3>
+        <p>Base técnica sólida, consistência e progressão para competição.</p>
+      </div>
+      <div class="tile">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 20c6-2 10-6 12-12" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M6 4c6 2 10 6 12 12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Arco Composto</h3>
+        <p>Desempenho com polias, foco em precisão, mira e acionamento.</p>
+      </div>
+      <div class="tile">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3 7h7l-6 4 2 9-6-5-6 5 2-9-6-4h7l3-7z" stroke="white" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>Barebow</h3>
+        <p>Controle de execução sem mira. Forte evolução de técnica e ancoragem.</p>
+      </div>
+    </div>
+
+    <div style="height:14px"></div>
+
+    <div class="card pad">
+      <h3 style="margin-top:0;">Fundamentos (formação)</h3>
+      <p class="lead" style="max-width: 90ch;">
+        Para iniciantes, a prioridade é segurança, postura, puxada, ancoragem, alinhamento, expansão e follow-through.
+        A partir daí, introduzimos progressão de distância e metas de agrupamento.
+      </p>
+      <div class="grid-2">
+        <div class="tile"><h3>Iniciante</h3><p>Primeiros disparos, regras do campo, postura e consistência.</p></div>
+        <div class="tile"><h3>Intermediário</h3><p>Rotina de tiro, correções finas e controle mental.</p></div>
+        <div class="tile"><h3>Avançado</h3><p>Plano de temporada, volume, intensidade e alto rendimento.</p></div>
+        <div class="tile"><h3>Competição</h3><p>Simulados, ranking interno, análise de desempenho e ajuste.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="badge"><span class="b"></span> BORTOLOTO</div>
+      <p style="margin:10px 0 0; line-height:1.6; color: var(--muted); max-width: 80ch;">
+        Portal oficial do clube, com materiais, eventos, modalidades e inscrições.
+        Integração com formulário/Google Sheets pode ser adicionada quando você quiser.
+      </p>
+      <small>© <span id="y"></span> BORTOLOTO. Todos os direitos reservados.</small>
+    </div>
+    <div>
+      <p style="margin:0 0 8px; color: var(--muted); font-weight:800;">Contato</p>
+      <div class="tile" style="padding:14px;">
+        <div style="display:grid; gap:8px;">
+          <div><strong>WhatsApp:</strong> <span style="color:var(--muted)">(coloque aqui)</span></div>
+          <div><strong>Instagram:</strong> <span style="color:var(--muted)">@bortoloto (exemplo)</span></div>
+          <div><strong>E-mail:</strong> <span style="color:var(--muted)">contato@seu-dominio.com</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B102C" />
+  <title>Inscrições • BORTOLOTO</title>
+  <meta name="description" content="Formulário de inscrição no clube e eventos." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    /* Ajuste fino do iframe Google Forms */
+    .form-embed {
+      width: 100%;
+      border: none;
+      border-radius: 16px;
+      background: #fff;
+      min-height: 1100px;
+    }
+
+    @media (max-width: 768px) {
+      .form-embed {
+        min-height: 1400px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-badge">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M6 18l6-12 6 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M8 18h8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="brand-title">
+        <strong>BORTOLOTO</strong>
+        <span>Clube de Formação e Alto Rendimento Esportivo</span>
+      </div>
+    </a>
+
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="materiais.html">Materiais</a>
+      <a href="fotos.html">Fotos</a>
+      <a href="provas.html">Provas</a>
+      <a href="modalidades.html">Modalidades</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="aulas.html">Aulas</a>
+      <a class="active" href="inscricoes.html">Inscrições</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn primary" href="inscricoes.html">Inscrever-se</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container">
+
+    <div class="section-head">
+      <div>
+        <h2>Inscrições</h2>
+        <p>
+          Inscrição oficial para eventos, aulas e competições do BORTOLOTO.
+          Preencha o formulário abaixo para garantir sua participação.
+        </p>
+      </div>
+    </div>
+
+    <div class="card pad">
+      <h3 style="margin-top:0;">Formulário de Inscrição</h3>
+
+      <iframe
+        class="form-embed"
+        src="https://docs.google.com/forms/d/1WSfVElHJP6OtMPJkH0s0sKOHr3NndQSGVWbp3mI4Pqk/viewform?embedded=true"
+        loading="lazy"
+      >
+        Carregando…
+      </iframe>
+
+      <p style="margin-top:12px; color:var(--muted2); font-size:14px;">
+        As informações enviadas são registradas automaticamente em nosso sistema.
+      </p>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+       <div class="badge"><span class="b"></span> BORTOLOTO</div>
+      <p style="margin:10px 0 0; line-height:1.6; color: var(--muted); max-width: 80ch;">
+        Portal oficial do clube, com materiais, eventos, modalidades e inscrições.
+      </p>
+      <small>© <span id="y"></span> BORTOLOTO. Todos os direitos reservados.</small>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

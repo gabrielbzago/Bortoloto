@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B102C" />
+  <title>Fotos • BORTOLOTO</title>
+  <meta name="description" content="Galeria de fotos de treinos, provas e eventos." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="BORTOLOTO - Página inicial">
+      <div class="brand-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M6 18l6-12 6 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 18h8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="brand-title">
+        <strong>BORTOLOTO</strong>
+        <span>Clube de Formação e Alto Rendimento Esportivo</span>
+      </div>
+    </a>
+
+    <button class="btn small mobile-toggle" data-mobile-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+
+    <nav id="menu" class="menu" data-menu aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+<a href="materiais.html">Materiais</a>
+<a href="fotos.html">Fotos</a>
+<a href="provas.html">Provas</a>
+<a href="modalidades.html">Modalidades</a>
+<a href="eventos.html">Eventos</a>
+<a href="aulas.html">Aulas</a>
+      <a href="inscricoes.html">Inscrições</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn primary" href="inscricoes.html">Inscrever-se</a>
+    </div>
+  </div>
+</header>
+<main>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Fotos</h2>
+        <p>Galeria pronta para inserir fotos de treinos, provas e bastidores. Os blocos abaixo são placeholders.</p>
+      </div>
+      <a class="btn" href="eventos.html">Ver próximos eventos</a>
+    </div>
+
+    <div class="card pad">
+      <h3 style="margin-top:0;">Galeria</h3>
+      <p class="lead" style="max-width: 90ch; margin-top:6px;">
+        Fotos do clube integradas ao Google Photos. Se a galeria não carregar, use o botão abaixo para abrir o álbum.
+      </p>
+
+      <!-- PublicAlbum widget (Google Photos) -->
+      <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+      <div class="pa-carousel-widget"
+        style="width:100%; height:560px; display:none; border-radius:16px; overflow:hidden;"
+        data-link="https://photos.google.com/album/AF1QipOAfKxfyEYs2p_BgQvUZHeIoH45RpqaM03l_4GO"
+        data-title="BORTOLOTO • Fotos"
+        data-delay="4"
+        data-autorepeat="true"
+        data-background-color="transparent">
+      </div>
+
+      <div style="height:12px"></div>
+      <a class="btn" target="_blank" rel="noopener"
+         href="https://photos.google.com/album/AF1QipOAfKxfyEYs2p_BgQvUZHeIoH45RpqaM03l_4GO">
+        Abrir álbum no Google Photos
+      </a>
+
+      <p style="margin:12px 0 0; color: var(--muted2); font-size:14px;">
+        Observação: para funcionar em qualquer navegador, o álbum precisa estar compartilhado/publicado (link de compartilhamento ativo).
+      </p>
+    </div>
+
+</div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="badge"><span class="b"></span> BORTOLOTO</div>
+      <p style="margin:10px 0 0; line-height:1.6; color: var(--muted); max-width: 80ch;">
+        Portal oficial do clube, com materiais, eventos, modalidades e inscrições.
+        Integração com formulário/Google Sheets pode ser adicionada quando você quiser.
+      </p>
+      <small>© <span id="y"></span> BORTOLOTO. Todos os direitos reservados.</small>
+    </div>
+    <div>
+      <p style="margin:0 0 8px; color: var(--muted); font-weight:800;">Contato</p>
+      <div class="tile" style="padding:14px;">
+        <div style="display:grid; gap:8px;">
+          <div><strong>WhatsApp:</strong> <span style="color:var(--muted)">(coloque aqui)</span></div>
+          <div><strong>Instagram:</strong> <span style="color:var(--muted)">@bortoloto (exemplo)</span></div>
+          <div><strong>E-mail:</strong> <span style="color:var(--muted)">contato@seu-dominio.com</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
