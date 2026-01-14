@@ -7,6 +7,42 @@
   <title>Início • BORTOLOTO</title>
   <meta name="description" content="Portal do clube BORTOLOTO: formação, alto rendimento, modalidades, eventos e inscrições." />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    /* Hero: dar mais espaço para leitura e enquadrar o logo (desktop) */
+    .hero-grid{
+      grid-template-columns: 0.9fr 1.6fr;
+      align-items: center;
+      gap: 18px;
+    }
+    .logo-card{ display:flex; align-items:center; justify-content:center; padding:32px; }
+    .logo-wrap{ width:100%; max-width:260px; margin:0 auto; }
+    .logo-wrap img{ width:100%; height:auto; object-fit:contain; border-radius:16px; }
+
+    /* Mobile: layout confortável (sem “espremido”) */
+    @media (max-width: 900px){
+      .hero{ padding-top:18px; padding-bottom:18px; }
+      .hero-grid{ grid-template-columns:1fr; gap:14px; }
+      .card.pad{ padding:18px; }
+      .card.pad h1{ font-size:34px; line-height:1.08; }
+      .lead{ font-size:15.5px; line-height:1.6; }
+      .logo-card{ order:2; padding:16px; }
+      .card.pad{ order:1; }
+      .logo-wrap{ max-width:220px; }
+
+      .hero-cta{ display:grid; gap:10px; }
+      .hero-cta .btn{ width:100%; justify-content:center; }
+      .hero-cta .meta{ margin-top:2px; flex-wrap:wrap; row-gap:6px; }
+
+      .pills{ display:flex; flex-wrap:wrap; gap:8px; }
+      .pill{ white-space:normal; }
+    }
+    @media (max-width: 420px){
+      .card.pad h1{ font-size:30px; }
+      .logo-wrap{ max-width:200px; }
+    }
+  </style>
+
 </head>
 <body>
 <header class="nav">
@@ -78,7 +114,8 @@
     <div class="section-head">
       <div>
         <h2>Atalhos do portal</h2>
-           </div>
+      </div>
+    </div>
 
     <div class="grid-3">
       <a class="tile" href="modalidades.html">
